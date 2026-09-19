@@ -1,65 +1,64 @@
 {
-  "timestamp": "2026-09-19T13:20:35+00:00",
-  "duration_seconds": 311.9,
-  "raw_collected": 3158,
-  "valid_configs": 126,
+  "timestamp": "2026-09-19T14:20:52+00:00",
+  "duration_seconds": 329.9,
+  "raw_collected": 3103,
+  "valid_configs": 137,
   "skip_xray": false,
   "pipeline": {
     "layer1_format": {
-      "total": 3158,
-      "valid": 2293,
-      "invalid": 865,
+      "total": 3103,
+      "valid": 2252,
+      "invalid": 851,
       "top_reasons": {
-        "security نامعتبر: none": 763,
-        "security نامعتبر: ": 53,
-        "reality بدون pbk": 24,
-        "UUID نامعتبر: turboo-server": 3,
+        "security نامعتبر: none": 754,
+        "security نامعتبر: ": 52,
+        "reality بدون pbk": 21,
+        "security نامعتبر: false": 3,
         "UUID نامعتبر: ": 3
       }
     },
     "layer2_dedup": {
-      "total": 2293,
-      "unique": 2158,
+      "total": 2252,
+      "unique": 2134,
       "exact_dups": 0,
-      "norm_dups": 80,
-      "fp_dups": 55
+      "norm_dups": 65,
+      "fp_dups": 53
     },
     "layer3_tcp": {
-      "total": 2158,
-      "connected": 1569,
-      "failed": 589,
-      "avg_latency_ms": 154.1
+      "total": 2134,
+      "connected": 1552,
+      "failed": 582,
+      "avg_latency_ms": 158.5
     },
     "layer4_tls": {
-      "total": 1569,
-      "passed": 1509,
-      "failed": 60,
-      "avg_tls_ms": 393.1
+      "total": 1552,
+      "passed": 1487,
+      "failed": 65,
+      "avg_tls_ms": 409.2
     },
     "layer5_geo": {
-      "total": 1509,
-      "passed": 1498,
+      "total": 1487,
+      "passed": 1476,
       "failed": 11,
       "unknown_country": 0,
       "countries": {
-        "US": 743,
-        "SG": 33,
-        "AE": 37,
-        "RU": 66,
-        "NL": 87,
-        "DE": 90,
-        "SC": 1,
+        "US": 731,
+        "SG": 32,
+        "AE": 35,
+        "RU": 64,
+        "NL": 86,
+        "DE": 88,
         "AQ": 1,
-        "LV": 6,
+        "LV": 7,
         "GB": 65,
         "AU": 3,
         "BG": 13,
-        "PL": 25,
-        "FI": 75,
-        "FR": 28,
-        "EE": 12,
+        "PL": 23,
+        "FI": 72,
+        "FR": 26,
+        "EE": 15,
         "CZ": 3,
-        "CA": 13,
+        "CA": 15,
         "CY": 1,
         "TR": 13,
         "ES": 3,
@@ -68,17 +67,17 @@
         "JP": 44,
         "CH": 6,
         "IT": 12,
-        "RS": 16,
-        "BZ": 3,
+        "RS": 17,
+        "BZ": 1,
         "LT": 2,
-        "NO": 7,
-        "KR": 8,
+        "NO": 6,
+        "KR": 9,
         "TW": 16,
-        "IN": 6,
+        "IN": 7,
         "BE": 2,
-        "KZ": 3,
+        "KZ": 2,
         "TH": 1,
-        "MD": 10,
+        "MD": 9,
         "HK": 11,
         "MY": 1,
         "VN": 1,
@@ -90,24 +89,24 @@
         "CL": 1,
         "VG": 1,
         "QA": 2,
-        "AT": 2,
+        "AT": 3,
         "DK": 1,
-        "UA": 1,
-        "MX": 1
+        "MX": 2,
+        "UA": 1
       }
     },
     "layer6_http": {
       "total": 400,
-      "passed": 126,
-      "failed": 274,
-      "avg_ms": 680.9,
-      "best_ms": 34.7,
+      "passed": 137,
+      "failed": 263,
+      "avg_ms": 958.9,
+      "best_ms": 39.3,
       "top_reasons": {
-        "همه URL ها fail شدن": 207,
-        "xray بالا نیامد: nfra/conf: Failed to build TLS config. > infra/conf: unknown fingerprint: unsafe": 9,
-        "xray بالا نیامد:  > infra/conf: Failed to build REALITY config. > infra/conf: empty \"fingerprint\"": 3
+        "همه URL ها fail شدن": 198,
+        "xray بالا نیامد: nfra/conf: Failed to build TLS config. > infra/conf: unknown fingerprint: unsafe": 11,
+        "xray بالا نیامد:  > infra/conf: Failed to build REALITY config. > infra/conf: empty \"fingerprint\"": 2
       },
-      "not_tested": 1098
+      "not_tested": 1076
     }
   }
 }

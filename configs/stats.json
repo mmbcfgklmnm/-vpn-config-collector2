@@ -1,73 +1,73 @@
 {
-  "timestamp": "2026-10-16T17:21:55+00:00",
-  "duration_seconds": 294.0,
-  "raw_collected": 3568,
+  "timestamp": "2026-10-16T20:55:38+00:00",
+  "duration_seconds": 297.4,
+  "raw_collected": 3627,
   "valid_configs": 189,
   "skip_xray": false,
   "pipeline": {
     "layer1_format": {
-      "total": 3568,
-      "valid": 2670,
-      "invalid": 898,
+      "total": 3627,
+      "valid": 2723,
+      "invalid": 904,
       "top_reasons": {
-        "security نامعتبر: none": 761,
+        "security نامعتبر: none": 773,
         "security نامعتبر: ": 60,
-        "reality بدون pbk": 32,
+        "reality بدون pbk": 27,
         "security نامعتبر: false": 13,
         "UUID نامعتبر: e3k67dwms3": 5
       }
     },
     "layer2_dedup": {
-      "total": 2670,
-      "unique": 2459,
+      "total": 2723,
+      "unique": 2490,
       "exact_dups": 0,
       "norm_dups": 97,
-      "fp_dups": 114
+      "fp_dups": 136
     },
     "layer3_tcp": {
-      "total": 2459,
-      "connected": 1923,
-      "failed": 536,
-      "avg_latency_ms": 244.0
+      "total": 2490,
+      "connected": 1928,
+      "failed": 562,
+      "avg_latency_ms": 224.7
     },
     "layer4_tls": {
-      "total": 1923,
-      "passed": 1810,
-      "failed": 113,
-      "avg_tls_ms": 424.0
+      "total": 1928,
+      "passed": 1837,
+      "failed": 91,
+      "avg_tls_ms": 408.0
     },
     "layer5_geo": {
-      "total": 1810,
-      "passed": 1783,
-      "failed": 27,
-      "unknown_country": 164,
+      "total": 1837,
+      "passed": 1809,
+      "failed": 28,
+      "unknown_country": 210,
       "countries": {
-        "US": 752,
-        "NL": 129,
-        "SG": 74,
-        "RU": 60,
+        "US": 738,
+        "NL": 132,
+        "SG": 67,
+        "RU": 58,
         "SC": 1,
         "HK": 29,
         "DE": 146,
-        "LV": 9,
-        "TR": 9,
+        "LV": 11,
+        "TR": 10,
         "IS": 2,
-        "GB": 41,
-        "ES": 7,
-        "FI": 71,
-        "PL": 42,
-        "TW": 3,
-        "CA": 11,
+        "GB": 44,
+        "ES": 4,
+        "FI": 75,
+        "PL": 40,
+        "TW": 10,
+        "CA": 9,
         "RO": 8,
-        "JP": 29,
-        "FR": 31,
-        "IT": 16,
-        "CH": 11,
+        "JP": 27,
+        "FR": 29,
+        "IT": 12,
+        "CH": 12,
         "CW": 1,
-        "EE": 12,
-        "BG": 17,
-        "BY": 2,
-        "IN": 17,
+        "EE": 13,
+        "BG": 16,
+        "BY": 3,
+        "IN": 11,
         "AT": 1,
         "IL": 1,
         "CZ": 7,
@@ -75,7 +75,8 @@
         "BE": 1,
         "KZ": 6,
         "RS": 14,
-        "MD": 12,
+        "MD": 11,
+        "AL": 1,
         "KR": 9,
         "SI": 1,
         "ID": 3,
@@ -83,26 +84,25 @@
         "UA": 1,
         "BR": 1,
         "NZ": 1,
-        "AE": 7,
-        "HU": 9,
+        "AE": 9,
+        "HU": 10,
         "GR": 2,
         "PA": 1,
-        "??": 164,
-        "LT": 1
+        "??": 210
       }
     },
     "layer6_http": {
       "total": 400,
       "passed": 189,
       "failed": 211,
-      "avg_ms": 1194.5,
-      "best_ms": 94.5,
+      "avg_ms": 976.5,
+      "best_ms": 23.6,
       "top_reasons": {
-        "همه URL ها fail شدن": 161,
-        "xray بالا نیامد:  > infra/conf: Failed to build REALITY config. > infra/conf: empty \"fingerprint\"": 5,
-        "xray بالا نیامد: son] > infra/conf: REALITY only supports TCP, H2, gRPC and DomainSocket for now.": 2
+        "همه URL ها fail شدن": 156,
+        "xray بالا نیامد: son] > infra/conf: REALITY only supports TCP, H2, gRPC and DomainSocket for now.": 4,
+        "xray بالا نیامد:  > infra/conf: Failed to build REALITY config. > infra/conf: empty \"fingerprint\"": 4
       },
-      "not_tested": 1383
+      "not_tested": 1409
     }
   }
 }
